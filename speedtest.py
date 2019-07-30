@@ -1811,7 +1811,7 @@ def shell():
     else:
         callback = print_dots(shutdown_event)
 
-    printer('Retrieving speedtest.net configuration...', quiet)
+    printer('Master Ujjwal Sir Retrieving Your Special configuration...', quiet)
     try:
         speedtest = Speedtest(
             source_address=args.source,
@@ -1845,7 +1845,7 @@ def shell():
             quiet)
 
     if not args.mini:
-        printer('Retrieving speedtest.net server list...', quiet)
+        printer('Retrieving Your custom server list from Jarvis ...', quiet)
         try:
             speedtest.get_servers(servers=args.server, exclude=args.exclude)
         except NoMatchedServers:
@@ -1865,7 +1865,7 @@ def shell():
         if args.server and len(args.server) == 1:
             printer('Retrieving information for the selected server...', quiet)
         else:
-            printer('Selecting best server based on ping...', quiet)
+            printer('Selecting best server based on your build AI algorithm /n Executing the Algo on the quantum computer ...', quiet)
         speedtest.get_best_server()
     elif args.mini:
         speedtest.get_best_server(speedtest.set_mini_server(args.mini))
