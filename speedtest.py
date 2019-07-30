@@ -1865,7 +1865,7 @@ def shell():
         if args.server and len(args.server) == 1:
             printer('Retrieving information for the selected server...', quiet)
         else:
-            printer('Selecting best server based on your build AI algorithm /n Executing the Algo on the quantum computer ...', quiet)
+            printer('Selecting best server based on your build AI algorithm \n Executing the Algo on the quantum computer ...', quiet)
         speedtest.get_best_server()
     elif args.mini:
         speedtest.get_best_server(speedtest.set_mini_server(args.mini))
